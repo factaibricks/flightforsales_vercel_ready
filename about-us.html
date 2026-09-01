@@ -7,210 +7,212 @@
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#F5F7F8;
-color:#222;
+  background:#F4F7F6;
+  color:#222;
 }
 
-/* Header */
+/* ---------- HEADER ---------- */
 
 header{
-background:#0B7A43;
-padding:18px 0;
-box-shadow:0 2px 8px rgba(0,0,0,.15);
-position:sticky;
-top:0;
-z-index:999;
+  background:#0B7A43;
+  padding:18px 0;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+  position:sticky;
+  top:0;
+  z-index:999;
 }
 
 .container{
-max-width:1200px;
-margin:auto;
-padding:0 20px;
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
 }
 
 .nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .logo{
-color:#fff;
-font-size:30px;
-font-weight:bold;
-text-decoration:none;
+  color:#fff;
+  text-decoration:none;
+  font-size:30px;
+  font-weight:bold;
 }
 
 .menu{
-display:flex;
-align-items:center;
-gap:18px;
+  display:flex;
+  align-items:center;
+  gap:18px;
 }
 
 .menu a{
-color:#fff;
-text-decoration:none;
-font-weight:600;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
 }
 
 .menu a:hover{
-text-decoration:underline;
+  text-decoration:underline;
 }
 
 .desktop-links{
-display:flex;
-gap:18px;
+  display:flex;
+  gap:18px;
 }
 
-/* Main Content */
+/* ---------- CONTENT ---------- */
 
 .hero{
-max-width:900px;
-margin:55px auto;
-background:#fff;
-padding:55px 60px;
-border-radius:18px;
-box-shadow:0 10px 28px rgba(0,0,0,.08);
+  background:#fff;
+  max-width:880px;
+  margin:50px auto;
+  padding:55px;
+  border-radius:18px;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
 
-.hero h1{
-text-align:center;
-color:#0B7A43;
-font-size:42px;
-margin-bottom:25px;
+h1{
+  color:#0B7A43;
+  text-align:center;
+  font-size:42px;
+  margin-bottom:22px;
 }
 
-.hero h2{
-text-align:center;
-color:#0B7A43;
-font-size:30px;
-margin:35px 0 18px;
+h2{
+  color:#0B7A43;
+  text-align:center;
+  font-size:28px;
+  margin:35px 0 18px;
 }
 
 .hero p{
-max-width:760px;
-margin:0 auto 18px;
-line-height:1.9;
-font-size:17px;
-text-align:center;
+  max-width:720px;
+  margin:0 auto 18px;
+  text-align:center;
+  line-height:1.9;
+  font-size:17px;
 }
 
-/* Bullet List */
+/* PERFECT CENTER BULLETS */
 
 .hero ul{
-max-width:520px;
-margin:0 auto;
-padding-left:20px;
-line-height:1.9;
-font-size:17px;
+  display:table;
+  margin:0 auto;
+  padding-left:22px;
+  text-align:left;
+  line-height:2;
+  font-size:17px;
 }
 
 .hero li{
-margin-bottom:10px;
+  margin-bottom:8px;
 }
 
 /* CTA */
 
 .cta{
-margin-top:40px;
-background:#0B7A43;
-padding:35px;
-border-radius:14px;
-text-align:center;
-color:#fff;
+  margin-top:40px;
+  background:#0B7A43;
+  border-radius:14px;
+  padding:35px;
+  text-align:center;
+  color:#fff;
 }
 
 .cta h2{
-color:#fff;
-margin-bottom:12px;
+  color:#fff;
+  margin:0 0 12px;
 }
 
 .cta p{
-color:#fff;
+  color:#fff;
+  text-align:center;
 }
 
 .btn{
-display:inline-block;
-margin-top:18px;
-background:#fff;
-color:#0B7A43;
-padding:14px 28px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
+  display:inline-block;
+  margin-top:18px;
+  background:#fff;
+  color:#0B7A43;
+  text-decoration:none;
+  font-weight:bold;
+  padding:14px 30px;
+  border-radius:8px;
 }
 
-/* Footer */
+/* ---------- FOOTER ---------- */
 
 footer{
-background:#111827;
-color:#fff;
-padding:35px 0;
-margin-top:50px;
+  background:#111827;
+  color:#fff;
+  padding:35px 0;
 }
 
 .footer-links{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:16px;
-margin:20px 0;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:16px;
+  margin:20px 0;
 }
 
 .footer-links a{
-color:#fff;
-text-decoration:none;
-font-size:15px;
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
 }
 
 .copy{
-text-align:center;
-font-size:14px;
-opacity:.8;
+  text-align:center;
+  opacity:.8;
+  font-size:14px;
 }
 
-/* Mobile */
+/* ---------- MOBILE ---------- */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.desktop-links{
-display:none;
-}
+  .desktop-links{
+    display:none;
+  }
 
-.logo{
-font-size:24px;
-}
+  .logo{
+    font-size:24px;
+  }
 
-.hero{
-margin:25px 12px;
-padding:35px 24px;
-}
+  .hero{
+    margin:25px 12px;
+    padding:35px 24px;
+  }
 
-.hero h1{
-font-size:32px;
-}
+  h1{
+    font-size:32px;
+  }
 
-.hero h2{
-font-size:24px;
-}
+  h2{
+    font-size:24px;
+  }
 
-.hero p{
-text-align:left;
-font-size:16px;
-}
+  .hero p{
+    text-align:left;
+    font-size:16px;
+  }
 
-.hero ul{
-max-width:100%;
-padding-left:18px;
-font-size:16px;
-}
+  .hero ul{
+    display:block;
+    max-width:100%;
+    padding-left:20px;
+    font-size:16px;
+  }
 
 }
 </style>
@@ -220,9 +222,12 @@ font-size:16px;
 <body>
 
 <header>
+
 <div class="container nav">
 
-<a href="index.html" class="logo">Flight For Sales</a>
+<a href="index.html" class="logo">
+Flight For Sales
+</a>
 
 <div class="menu">
 
@@ -239,6 +244,7 @@ font-size:16px;
 </div>
 
 </div>
+
 </header>
 
 <div class="container">
@@ -248,7 +254,7 @@ font-size:16px;
 <h1>About Flight For Sales</h1>
 
 <p>
-Flight For Sales is committed to helping travelers discover affordable domestic and international airfare. Our experienced travel specialists provide personalized booking assistance and competitive flight options designed to meet every traveler's budget.
+Flight For Sales is committed to helping travelers discover affordable domestic and international airfare. Our experienced travel specialists provide personalized booking assistance and competitive flight options designed to meet every traveler’s budget.
 </p>
 
 <p>
@@ -275,7 +281,9 @@ Our mission is to make air travel more accessible by connecting travelers with o
 
 <h2>Need Help Booking Your Flight?</h2>
 
-<p>Speak directly with our travel support specialists.</p>
+<p>
+Speak directly with our travel support specialists.
+</p>
 
 <a href="tel:+18556444008" class="btn">
 Call +1 (855) 644-4008
@@ -291,7 +299,9 @@ Call +1 (855) 644-4008
 
 <div class="container">
 
-<h2 style="color:#fff;text-align:center;">Flight For Sales</h2>
+<h2 style="color:#fff;text-align:center;">
+Flight For Sales
+</h2>
 
 <p style="text-align:center;margin-top:10px;">
 Customer Support: +1 (855) 644-4008
