@@ -18,18 +18,22 @@ background:#F5F7F8;
 color:#222;
 }
 
+/* HEADER */
+
 header{
 background:#0B7A43;
 padding:18px 0;
 box-shadow:0 2px 8px rgba(0,0,0,.15);
 position:sticky;
 top:0;
+z-index:1000;
 }
 
 .container{
-width:90%;
-max-width:1100px;
-margin:auto;
+width:100%;
+max-width:1200px;
+margin:0 auto;
+padding:0 20px;
 }
 
 .nav{
@@ -40,64 +44,85 @@ align-items:center;
 
 .logo{
 color:#fff;
-font-size:28px;
+font-size:32px;
 font-weight:bold;
 text-decoration:none;
+}
+
+.menu{
+display:flex;
+align-items:center;
+gap:20px;
 }
 
 .menu a{
 color:#fff;
 text-decoration:none;
-margin-left:25px;
 font-weight:600;
+font-size:16px;
 }
 
 .menu a:hover{
 text-decoration:underline;
 }
 
+.desktop-links{
+display:flex;
+gap:20px;
+}
+
+/* CONTENT */
+
 .hero{
 background:#fff;
-margin:35px auto;
-padding:50px;
-border-radius:12px;
-box-shadow:0 5px 18px rgba(0,0,0,.08);
+max-width:900px;
+margin:55px auto;
+padding:55px 60px;
+border-radius:18px;
+box-shadow:0 10px 28px rgba(0,0,0,.08);
 }
 
-h1{
+.hero h1{
 color:#0B7A43;
-font-size:38px;
-margin-bottom:20px;
+font-size:42px;
+text-align:center;
+margin-bottom:25px;
 }
 
-h2{
+.hero h2{
 color:#0B7A43;
-margin:30px 0 15px;
+font-size:30px;
+text-align:center;
+margin:35px 0 18px;
 }
 
-p{
-line-height:1.8;
-margin-bottom:15px;
+.hero p{
+max-width:760px;
+margin:0 auto 18px;
+line-height:1.9;
+font-size:17px;
+text-align:center;
+}
+
+.hero ul{
+max-width:650px;
+margin:0 auto;
+line-height:1.9;
 font-size:17px;
 }
 
-ul{
-padding-left:20px;
-line-height:1.8;
-}
-
 .cta{
-margin-top:35px;
+margin-top:40px;
 background:#0B7A43;
 padding:35px;
-border-radius:10px;
+border-radius:14px;
 text-align:center;
 color:#fff;
 }
 
 .cta h2{
 color:#fff;
-margin-top:0;
+margin:0 0 15px;
 }
 
 .btn{
@@ -108,54 +133,67 @@ color:#0B7A43;
 padding:14px 28px;
 text-decoration:none;
 font-weight:bold;
-border-radius:6px;
+border-radius:8px;
 }
+
+/* FOOTER */
 
 footer{
 background:#111827;
 color:#fff;
 padding:35px 0;
-margin-top:40px;
+margin-top:50px;
 }
 
 .footer-links{
-margin:18px 0;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:16px;
+margin:20px 0;
 }
 
 .footer-links a{
 color:#fff;
 text-decoration:none;
-margin:0 12px;
 font-size:15px;
 }
 
-.footer-links a:hover{
-text-decoration:underline;
-}
-
 .copy{
+text-align:center;
 font-size:14px;
 opacity:.8;
-margin-top:10px;
 }
+
+/* MOBILE */
 
 @media(max-width:768px){
 
-.nav{
-flex-direction:column;
-gap:15px;
+.logo{
+font-size:24px;
 }
 
-.menu a{
-margin:0 10px;
+.desktop-links{
+display:none;
 }
 
 .hero{
-padding:30px 22px;
+margin:30px 15px;
+padding:35px 24px;
 }
 
-h1{
-font-size:30px;
+.hero h1{
+font-size:32px;
+}
+
+.hero h2{
+font-size:24px;
+}
+
+.hero p,
+.hero ul{
+font-size:16px;
+text-align:left;
 }
 
 }
@@ -168,13 +206,20 @@ font-size:30px;
 <header>
 <div class="container nav">
 
-<a href="index.html" class="logo">
-Flight For Sales
-</a>
+<a href="index.html" class="logo">Flight For Sales</a>
 
 <div class="menu">
+
 <a href="index.html">Home</a>
-<a href="about-us.html">About Us</a>
+
+<div class="desktop-links">
+<a href="about-us.html">About</a>
+<a href="contact-us.html">Contact</a>
+<a href="privacy-policy.html">Privacy</a>
+<a href="terms-conditions.html">Terms</a>
+<a href="cancellation-policy.html">Cancellation</a>
+</div>
+
 </div>
 
 </div>
@@ -191,7 +236,7 @@ Flight For Sales is committed to helping travelers discover affordable domestic 
 </p>
 
 <p>
-Whether you're planning a family vacation, business trip, honeymoon, or last-minute getaway, our team works to find reliable airline options with exceptional customer support throughout your booking journey.
+Whether you're planning a family vacation, business trip, honeymoon, or a last-minute getaway, our team works tirelessly to find reliable airline options with exceptional customer support throughout your booking journey.
 </p>
 
 <h2>Why Choose Flight For Sales?</h2>
@@ -207,14 +252,14 @@ Whether you're planning a family vacation, business trip, honeymoon, or last-min
 <h2>Our Mission</h2>
 
 <p>
-Our mission is to make air travel more accessible by connecting travelers with great airfare opportunities while delivering outstanding customer service and dependable travel assistance.
+Our mission is to make air travel more accessible by connecting travelers with outstanding airfare opportunities while delivering exceptional customer service, dependable booking support, and a smooth travel experience from start to finish.
 </p>
 
 <div class="cta">
 
 <h2>Need Help Booking Your Flight?</h2>
 
-<p>
+<p style="color:#fff;text-align:center;">
 Speak directly with our travel support specialists.
 </p>
 
@@ -230,13 +275,13 @@ Call +1 (855) 644-4008
 
 <footer>
 
-<div class="container" style="text-align:center;">
+<div class="container">
 
-<h2 style="color:#fff;margin:0;">
+<h2 style="color:#fff;text-align:center;margin:0;">
 Flight For Sales
 </h2>
 
-<p style="margin-top:10px;">
+<p style="text-align:center;margin-top:10px;">
 Customer Support: +1 (855) 644-4008
 </p>
 
@@ -244,8 +289,8 @@ Customer Support: +1 (855) 644-4008
 <a href="index.html">Home</a>
 <a href="about-us.html">About Us</a>
 <a href="contact-us.html">Contact Us</a>
+<a href="privacy-policy.html">Privacy Policy</a>
 <a href="terms-conditions.html">Terms</a>
-<a href="privacy-policy.html">Privacy</a>
 <a href="cancellation-policy.html">Cancellation</a>
 </div>
 
