@@ -7,148 +7,282 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{background:#F4F7F6;color:#222}
+body{background:#F5F8FF;color:#12203A;line-height:1.6}
+a{text-decoration:none}
 
 /* Header */
 header{
 background:#0B7A43;
-padding:18px 0;
-box-shadow:0 2px 8px rgba(0,0,0,.15);
+padding:16px 0;
+position:sticky;
+top:0;
+z-index:99;
+}
+.container{max-width:1180px;margin:auto;padding:0 20px}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.logo{color:#fff;font-size:28px;font-weight:700}
+.menu{display:flex;gap:22px}
+.menu a{color:#fff;font-weight:600;font-size:15px}
+@media(max-width:768px){
+.menu a:not(:first-child){display:none}
+.logo{font-size:24px}
 }
 
-.container{
-max-width:1200px;
-margin:auto;
-padding:0 20px;
-}
-
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-color:#fff;
-text-decoration:none;
-font-size:30px;
-font-weight:bold;
-}
-
-.menu{
-display:flex;
-align-items:center;
-gap:18px;
-}
-
-.menu a{
-color:#fff;
-text-decoration:none;
-font-weight:600;
-}
-
-.desktop-links{
-display:flex;
-gap:18px;
-}
-
-/* Main Card */
+/* Hero */
 .hero{
-background:#fff;
-max-width:880px;
-margin:50px auto;
-padding:25px;
+margin:30px auto;
 border-radius:18px;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
-
-/* NEW IMAGE */
-.contact-banner{
-margin-bottom:30px;
-border-radius:14px;
 overflow:hidden;
+background:linear-gradient(90deg,#0A3BA1 0%,#0B4FD6 45%,#0B4FD6 100%);
+display:grid;
+grid-template-columns:1.1fr 1fr;
+align-items:center;
+box-shadow:0 12px 30px rgba(10,59,161,.18)
 }
-
-.contact-banner img{
+.hero-content{
+padding:45px;
+color:#fff;
+}
+.tag{
+color:#8EEA9D;
+font-size:14px;
+font-weight:bold;
+letter-spacing:1px;
+margin-bottom:12px;
+display:block;
+}
+.hero h1{
+font-size:46px;
+line-height:1.1;
+margin-bottom:16px;
+}
+.hero p{
+font-size:18px;
+color:#E8F0FF;
+}
+.hero-img img{
 width:100%;
-height:320px;
+height:100%;
 object-fit:cover;
 display:block;
 }
 
-h1,h2{
-color:#0B7A43;
+/* Section */
+.section{
+background:#fff;
+border-radius:18px;
+padding:45px;
+box-shadow:0 8px 25px rgba(0,0,0,.06);
+margin-bottom:35px;
+}
+.section h2{
 text-align:center;
+font-size:38px;
+color:#0A3BA1;
+margin-bottom:10px;
+}
+.section .sub{
+text-align:center;
+color:#5B6B85;
+max-width:720px;
+margin:0 auto 35px;
 }
 
-.hero p{
+/* Cards */
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+.card{
+background:#fff;
+border:1px solid #E3E9F5;
+border-radius:16px;
+padding:22px;
 text-align:center;
-line-height:1.8;
-margin:16px 0;
-font-size:17px;
+transition:.2s;
+}
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+.icon{
+width:64px;
+height:64px;
+border-radius:50%;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+margin-bottom:14px;
+}
+.green{background:#E8F8EE;color:#0B7A43}
+.blue{background:#EAF1FF;color:#0B4FD6}
+.card h3{
+font-size:18px;
+margin-bottom:8px;
+color:#12203A;
+}
+.card p{
+font-size:14px;
+color:#5B6B85;
+}
+.card strong{
+display:block;
+margin:8px 0;
+font-size:16px;
+color:#12203A;
 }
 
-.btn{
-display:inline-block;
-background:#0B7A43;
+/* CTA */
+.cta{
+margin-top:35px;
+background:linear-gradient(90deg,#0A3BA1,#0B4FD6);
+border-radius:18px;
+padding:28px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 color:#fff;
-text-decoration:none;
-padding:14px 30px;
-border-radius:8px;
+flex-wrap:wrap;
+gap:20px;
+}
+.cta h3{
+font-size:30px;
+margin-bottom:6px;
+}
+.cta p{
+color:#D9E7FF;
+max-width:500px;
+}
+.btn{
+background:#12A150;
+color:#fff;
+padding:16px 28px;
+border-radius:10px;
 font-weight:bold;
-margin-top:20px;
+font-size:18px;
+display:inline-block;
+}
+.btn:hover{
+background:#0E8442;
 }
 
+/* Why */
+.why{
+margin-top:35px;
+border:1px solid #DCE8F8;
+border-radius:16px;
+padding:25px;
+background:#F8FCFF;
+}
+.why h3{
+text-align:center;
+color:#0A3BA1;
+margin-bottom:20px;
+font-size:28px;
+}
+.why-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+text-align:center;
+}
+.why-item{
+padding:10px;
+}
+.why-item span{
+font-size:34px;
+display:block;
+margin-bottom:10px;
+}
+.why-item b{
+display:block;
+margin-bottom:6px;
+}
+.why-item p{
+font-size:14px;
+color:#5B6B85;
+}
+
+/* Footer */
 footer{
-background:#111827;
+background:#081A33;
 color:#fff;
 padding:35px 0;
-margin-top:40px;
 }
-
-.footer-links{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:16px;
-margin:20px 0;
+.foot{
+display:grid;
+grid-template-columns:1.2fr 1fr;
+gap:25px;
 }
-
-.footer-links a{
-color:#fff;
-text-decoration:none;
+.foot h4{
+margin-bottom:12px;
 }
-
-.copy{
-text-align:center;
+.links a{
+display:block;
+color:#C7D5EE;
+margin-bottom:8px;
 font-size:14px;
-opacity:.8;
+}
+.copy{
+border-top:1px solid rgba(255,255,255,.12);
+margin-top:20px;
+padding-top:15px;
+text-align:center;
+color:#AFC3E8;
+font-size:14px;
 }
 
 /* Mobile */
-@media(max-width:768px){
-
-.desktop-links{
-display:none;
-}
-
-.logo{
-font-size:24px;
-}
-
+@media(max-width:900px){
 .hero{
-margin:25px 12px;
-padding:20px;
+grid-template-columns:1fr;
 }
-
-.contact-banner img{
-height:220px;
+.hero-content{
+order:2;
+padding:28px;
 }
-
-h1{
+.hero h1{
+font-size:36px;
+}
+.hero-img{
+order:1;
+}
+.hero-img img{
+height:240px;
+}
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+.why-grid{
+grid-template-columns:repeat(2,1fr);
+}
+.foot{
+grid-template-columns:1fr;
+}
+}
+@media(max-width:520px){
+.grid{
+grid-template-columns:1fr;
+}
+.why-grid{
+grid-template-columns:1fr;
+}
+.cta{
+text-align:center;
+justify-content:center;
+}
+.section{
+padding:28px 18px;
+}
+.hero h1{
+font-size:32px;
+}
+.section h2{
 font-size:30px;
 }
-
 }
 </style>
 </head>
@@ -157,55 +291,127 @@ font-size:30px;
 
 <header>
 <div class="container nav">
-
-<a href="index.html" class="logo">Flight For Sales</a>
+<div class="logo">Flight For Sales</div>
 
 <div class="menu">
 <a href="index.html">Home</a>
-
-<div class="desktop-links">
-<a href="about-us.html">About</a>
+<a href="about-us.html">About Us</a>
 <a href="contact-us.html">Contact</a>
 <a href="privacy-policy.html">Privacy</a>
 <a href="terms-conditions.html">Terms</a>
 <a href="cancellation-policy.html">Cancellation</a>
 </div>
-
-</div>
-
 </div>
 </header>
 
 <div class="container">
 
-<section class="hero">
+<!-- HERO -->
+<div class="hero">
 
-<!-- Top Image -->
-<div class="contact-banner">
-<img src="hero_option2.jpg" alt="Flight For Sales Travel Expert">
+<div class="hero-content">
+<span class="tag">WE'RE HERE TO HELP</span>
+<h1>Contact Us</h1>
+<p>Our travel experts are available 24/7 to help you find the best domestic and international flight deals.</p>
 </div>
 
-<h1>Contact Us</h1>
+<div class="hero-img">
+<img src="hero_option2.jpg" alt="Travel Expert">
+</div>
 
-<p>
-Our travel specialists are available 24/7 to help you find the best domestic and international flight deals.
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+
+<h2>We're Just a Call Away!</h2>
+
+<p class="sub">
+Have questions or need help with your booking? Our travel specialists are ready to assist you anytime, anywhere.
 </p>
 
-<h2>Customer Support</h2>
+<div class="grid">
 
-<p><strong>+1 (855) 644-4008</strong></p>
+<div class="card">
+<div class="icon green">📞</div>
+<h3>Customer Support</h3>
+<strong>+1 (855) 644-4008</strong>
+<p>Call us anytime for instant booking assistance.</p>
+</div>
 
-<h2>Business Hours</h2>
+<div class="card">
+<div class="icon blue">🕒</div>
+<h3>Business Hours</h3>
+<strong>24 Hours / 7 Days</strong>
+<p>Monday - Sunday</p>
+</div>
 
-<p>Monday – Sunday | 24 Hours</p>
+<div class="card">
+<div class="icon green">✉️</div>
+<h3>Email Support</h3>
+<strong>info@flightforsales.com</strong>
+<p>We'll get back to you as soon as possible.</p>
+</div>
 
-<p style="text-align:center;">
+<div class="card">
+<div class="icon blue">🌐</div>
+<h3>Our Services</h3>
+<strong>150+ Airlines</strong>
+<p>Domestic, International, Multi-City & Last-Minute Flights.</p>
+</div>
+
+</div>
+
+<!-- CTA -->
+<div class="cta">
+
+<div>
+<h3>Ready to Book Your Next Flight?</h3>
+<p>Speak directly with a real travel expert and compare deals from over 150+ airlines.</p>
+</div>
+
 <a href="tel:+18556444008" class="btn">
-Call Now
+📞 Call Now
 </a>
-</p>
 
-</section>
+</div>
+
+<!-- WHY -->
+<div class="why">
+
+<h3>Why Book With Flight For Sales?</h3>
+
+<div class="why-grid">
+
+<div class="why-item">
+<span>🎧</span>
+<b>Real Experts</b>
+<p>Personalized assistance from experienced travel agents.</p>
+</div>
+
+<div class="why-item">
+<span>🛡️</span>
+<b>Price Match</b>
+<p>Competitive airfare with transparent pricing.</p>
+</div>
+
+<div class="why-item">
+<span>✈️</span>
+<b>150+ Airlines</b>
+<p>Compare domestic & international flight options.</p>
+</div>
+
+<div class="why-item">
+<span>⚡</span>
+<b>Book in One Call</b>
+<p>Fast reservations with 24/7 customer support.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -213,21 +419,24 @@ Call Now
 
 <div class="container">
 
-<h2 style="color:#fff;text-align:center;">
-Flight For Sales
-</h2>
+<div class="foot">
 
-<p style="text-align:center;">
-Customer Support: +1 (855) 644-4008
-</p>
+<div>
+<h4>Flight For Sales</h4>
+<p>Customer Support</p>
+<h3>+1 (855) 644-4008</h3>
+</div>
 
-<div class="footer-links">
+<div class="links">
+<h4>Quick Links</h4>
 <a href="index.html">Home</a>
 <a href="about-us.html">About Us</a>
-<a href="contact-us.html">Contact</a>
-<a href="privacy-policy.html">Privacy</a>
-<a href="terms-conditions.html">Terms</a>
-<a href="cancellation-policy.html">Cancellation</a>
+<a href="contact-us.html">Contact Us</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms-conditions.html">Terms & Conditions</a>
+<a href="cancellation-policy.html">Cancellation Policy</a>
+</div>
+
 </div>
 
 <div class="copy">
