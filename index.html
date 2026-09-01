@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Cheap Flights by Phone — Speak to a Travel Expert | FlightForSales</title>
+<meta name="description" content="Speak to a real travel expert and compare flight deals from over 150 airlines. Price Match Promise. Independent travel agency. Call +1 (855) 447-6849.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0a3ba1">
+<!--
+  ════════════════════════════════════════════════════════════════════
+  FlightForSales — CALL-ONLY landing page.  Single self-contained file.
+  Every claim on this page is consistent with flightforsales.com. No invented
+  reviews, ratings, statistics, business history, or prices. Google Ads-compliant.
+  Icons are inline SVG (custom line icons) — no external requests, instant load.
+  DEV NOTES:
+   • Host at a dedicated URL (e.g. flightforsales.com/call). Do NOT touch the homepage.
+   • Hero visual is a built-in SVG scene (no download). To use a real PHOTO instead,
+     drop images/hero.jpg (~1200×620, <150KB) — it auto-overrides the SVG.
+   • Logo: drop images/logo.png (~36px tall). If missing, the text logo shows.
+   • Phone appears in several places. To change it, Find & Replace BOTH:
+        tel:+18554476849   (the link)   and   +1 (855) 447-6849   (the display text)
+   • Policy links point to the real pages on flightforsales.com. Update if paths change.
+  ════════════════════════════════════════════════════════════════════
+-->
+<style>
+  :root{--blue:#0b4fd6;--blue-dark:#0a3ba1;--green:#12a150;--green-dark:#0e8442;--ink:#12203a;--muted:#5b6b85;--bg:#f5f8ff;--card:#fff;--line:#e3e9f5}
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:78px}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  /* icons */
+  .i{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;width:32px;height:32px}
+  .ib{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;width:22px;height:22px;flex:0 0 auto}
+  .ip{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;width:16px;height:16px;vertical-align:-3px;margin-right:5px}
+  .ir{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;width:19px;height:19px;color:var(--blue);vertical-align:-4px;margin-right:9px}
+  .i,.ib,.ip,.ir{pointer-events:none}
+  a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:6px}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  .btn-call{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:#fff;font-weight:800;border-radius:14px;padding:18px 26px;font-size:20px;box-shadow:0 8px 22px rgba(18,161,80,.35);transition:transform .1s,background .15s}
+  .btn-call:hover{background:var(--green-dark);transform:translateY(-1px)}
+  .btn-call.small{padding:11px 18px;font-size:15px;border-radius:11px;gap:7px}
+  .btn-call.small .ib{width:16px;height:16px}
+  /* header */
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40}
+  .hbar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;font-weight:900;font-size:20px;color:var(--blue);letter-spacing:-.3px}
+  .logo .logo-img{max-height:36px;width:auto}
+  .logo .g{color:var(--green)}
+  .hnum{display:flex;align-items:center;gap:12px}
+  .hnum .n{font-weight:800;color:var(--ink);font-size:17px}
+  @media(max-width:640px){.hnum .n{display:none}}
+  /* hero */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#0a3ba1,#0b4fd6);color:#fff;text-align:center}
+  .hero .scene{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+  .hero .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+  .hero::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(7,22,60,.45) 0%,rgba(7,22,60,.35) 45%,rgba(7,22,60,.72) 100%)}
+  .hero .wrap{position:relative;z-index:3;padding-top:56px;padding-bottom:60px}
+  .hero .eyebrow{display:inline-flex;align-items:center;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);color:#eaf2ff;font-weight:700;font-size:13px;letter-spacing:.3px;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+  .hero h1{font-size:42px;line-height:1.1;font-weight:900;letter-spacing:-.6px;max-width:780px;margin:0 auto;text-shadow:0 2px 18px rgba(0,10,40,.35)}
+  .hero p.sub{font-size:19px;color:#e2ecff;max-width:610px;margin:16px auto 26px}
+  .hero .btn-call{font-size:22px;padding:20px 30px}
+  .trustline{margin-top:16px;color:#dbe7ff;font-size:15px;font-weight:600}
+  @media(max-width:640px){.hero h1{font-size:31px}.hero p.sub{font-size:17px}.hero .wrap{padding-top:40px;padding-bottom:46px}}
+  /* sections */
+  section{padding:48px 0}
+  h2{font-size:28px;font-weight:900;text-align:center;letter-spacing:-.4px;margin-bottom:8px}
+  .lead{text-align:center;color:var(--muted);max-width:600px;margin:0 auto 30px;font-size:17px}
+  .grid{display:grid;gap:18px}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:820px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr}}
+  @media(max-width:520px){.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 2px 10px rgba(20,40,80,.04)}
+  .card .ic{color:var(--blue);height:34px;display:flex;align-items:center}
+  .card .ic .i{width:32px;height:32px}
+  .card h3{font-size:17px;margin:12px 0 4px}
+  .card p{color:var(--muted);font-size:15px}
+  .urgency{background:#fff4e5;border-top:1px solid #ffe0b8;border-bottom:1px solid #ffe0b8;text-align:center;padding:20px}
+  .urgency b{color:#c25e00}
+  .urgency .ip{color:#c25e00}
+  /* trust strip */
+  .tstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:center}
+  .tstrip .t{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 12px}
+  .tstrip .t .ic{color:var(--blue-dark);display:flex;justify-content:center;margin-bottom:8px}
+  .tstrip .t .ic .i{width:26px;height:26px}
+  .tstrip .t .lbl{font-size:14px;color:var(--ink);font-weight:800}
+  .tstrip .t .sub{font-size:12.5px;color:var(--muted);font-weight:600;margin-top:2px}
+  @media(max-width:640px){.tstrip{grid-template-columns:repeat(2,1fr)}}
+  /* steps */
+  .step{display:flex;align-items:flex-start;gap:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:14px}
+  .step .no{flex:0 0 40px;height:40px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
+  .step h3{font-size:17px}.step p{color:var(--muted);font-size:15px}
+  /* routes */
+  .route{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 18px;margin-bottom:12px}
+  .route .r{font-weight:700;display:flex;align-items:center}.route .p{color:var(--green-dark);font-size:14px;font-weight:700}
+  /* badges */
+  .badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:10px}
+  .badge{display:inline-flex;align-items:center;background:#eaf1ff;color:var(--blue-dark);font-weight:700;font-size:14px;padding:9px 15px;border-radius:999px}
+  .secure{display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600;font-size:14px;margin-top:8px}
+  .secure .ip{color:var(--green-dark)}
+  /* faq */
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+  .faq summary{font-weight:700;cursor:pointer;list-style:none}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq p{color:var(--muted);margin-top:8px;font-size:15px}
+  /* final */
+  .final{background:linear-gradient(160deg,#12a150,#0e8442);color:#fff;text-align:center;border-radius:20px;padding:44px 20px;margin:10px 0}
+  .final h2{color:#fff}.final .btn-call{background:#fff;color:var(--green-dark);margin-top:18px}
+  .final .btn-call:hover{background:#eafff2}
+  /* footer */
+  footer{background:#0b1a33;color:#9fb0cc;padding:30px 0 26px;font-size:14px}
+  footer a{color:#cdd9ee}
+  .compliance{background:#08142a;border:1px solid #1a2c4d;border-radius:12px;color:#c7d5ee;font-weight:600;font-size:14px;padding:14px 16px;margin:0 0 20px;text-align:center}
+  .fcols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px}
+  @media(max-width:720px){.fcols{grid-template-columns:1fr;gap:14px}}
+  .fcols h4{color:#fff;font-size:14px;margin-bottom:8px;letter-spacing:.3px}
+  .fcols p,.fcols a{display:block;margin-bottom:5px;font-size:13.5px;line-height:1.5}
+  .foot-num{display:flex;align-items:center;color:#fff;font-weight:800;font-size:17px}
+  .foot-num .ip{color:#fff}
+  .disclaimer{margin-top:18px;color:#8496bb;font-size:12.5px;border-top:1px solid #1a2c4d;padding-top:16px}
+  /* sticky mobile call bar */
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top:1px solid var(--line);padding:9px 12px;box-shadow:0 -4px 16px rgba(10,30,70,.12)}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:#fff;font-weight:800;font-size:18px;border-radius:12px;padding:15px}
+</style>
+</head>
+<body>
+
+<!-- ICON SPRITE (custom inline line icons — defined once, reused everywhere) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="ic-phone" viewBox="0 0 24 24"><path d="M13.83 16.57a1 1 0 0 0 1.21-.3l.36-.47A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.47.35a1 1 0 0 0-.29 1.23 14 14 0 0 0 6.39 6.39z"/></symbol>
+  <symbol id="ic-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 4.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+  <symbol id="ic-price" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></symbol>
+  <symbol id="ic-headset" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5a9 9 0 0 1 18 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></symbol>
+  <symbol id="ic-refresh" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></symbol>
+  <symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+  <symbol id="ic-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="ic-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="ic-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+  <symbol id="ic-suitcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+  <symbol id="ic-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="ic-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+</svg>
+
+<!-- STICKY HEADER -->
+<header>
+  <div class="wrap hbar">
+    <div class="logo">
+      <img class="logo-img" src="images/logo.png" alt="FlightForSales"
+           onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+      <span class="logo-txt">Flight<span class="g">ForSales</span></span>
+    </div>
+    <div class="hnum">
+      <a class="n" href="tel:+18554476849"><svg class="ip" style="color:var(--blue)" aria-hidden="true"><use href="#ic-phone"/></svg>+1 (855) 447-6849</a>
+      <a class="btn-call small" href="tel:+18554476849"><svg class="ib" aria-hidden="true"><use href="#ic-phone"/></svg>Call an Expert</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="scene" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#06225f"/><stop offset="42%" stop-color="#0b4fd6"/>
+        <stop offset="76%" stop-color="#2f7ff0"/><stop offset="100%" stop-color="#bfe0ff"/>
+      </linearGradient>
+      <radialGradient id="sun" cx="72%" cy="86%" r="42%">
+        <stop offset="0%" stop-color="#fff6df" stop-opacity="0.95"/>
+        <stop offset="35%" stop-color="#ffd98a" stop-opacity="0.45"/>
+        <stop offset="100%" stop-color="#ffd98a" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#dce9ff" stop-opacity="0.6"/>
+      </linearGradient>
+    </defs>
+    <rect width="1440" height="620" fill="url(#sky)"/>
+    <rect width="1440" height="620" fill="url(#sun)"/>
+    <g fill="#ffffff" opacity="0.8">
+      <circle cx="120" cy="70" r="1.6"/><circle cx="300" cy="120" r="1.2"/><circle cx="500" cy="60" r="1.5"/>
+      <circle cx="720" cy="100" r="1.1"/><circle cx="220" cy="180" r="1.1"/><circle cx="900" cy="70" r="1.4"/>
+      <circle cx="1080" cy="130" r="1.2"/><circle cx="1300" cy="80" r="1.5"/><circle cx="620" cy="160" r="1"/>
+    </g>
+    <path d="M180 470 C 520 430, 780 330, 1080 200" stroke="#ffffff" stroke-width="6" fill="none" opacity="0.28" stroke-linecap="round"/>
+    <g transform="translate(1040,150) scale(0.16) rotate(-18)" fill="#ffffff" opacity="0.96">
+      <path d="M480 192H365.71L260.61 8.06A16 16 0 0 0 246.71 0h-65.5a16 16 0 0 0-15.42 20.11L214.85 192H112l-43.42-58.9a16 16 0 0 0-12.8-6.4H16.12a16 16 0 0 0-15.9 18.06l19.79 129.6L.16 402.05A16 16 0 0 0 16 420.06h40.6a16 16 0 0 0 12.8-6.4L112 355.06h102.87l-49.36 172.83A16 16 0 0 0 181 552.11h65.5a16 16 0 0 0 13.89-8.06L365.71 355.06H480c35.32 0 96-28.65 96-83.06s-60.68-80-96-80z"/>
+    </g>
+    <g fill="url(#cloud)">
+      <ellipse cx="230" cy="560" rx="200" ry="42" opacity="0.75"/>
+      <ellipse cx="470" cy="590" rx="260" ry="48" opacity="0.65"/>
+      <ellipse cx="1180" cy="560" rx="230" ry="46" opacity="0.7"/>
+      <ellipse cx="960" cy="600" rx="280" ry="52" opacity="0.6"/>
+    </g>
+  </svg>
+  <img class="photo" src="images/hero.jpg" alt="" onerror="this.style.display='none'">
+
+  <div class="wrap">
+    <span class="eyebrow"><svg class="ip" aria-hidden="true"><use href="#ic-plane"/></svg>Independent Online Travel Agency</span>
+    <h1>Book Cheap Flights by Phone — in Minutes</h1>
+    <p class="sub">Skip the endless searching. Call a real travel expert to compare deals from over 150 airlines and book with our Price Match Promise.</p>
+    <a class="btn-call" href="tel:+18554476849"><svg class="ib" aria-hidden="true"><use href="#ic-phone"/></svg>Speak to a Travel Expert Now</a>
+    <div class="trustline">150+ Airlines Compared &nbsp;·&nbsp; Price Match Promise &nbsp;·&nbsp; 24/7 Customer Support</div>
+  </div>
+</section>
+
+<!-- TRUST STRIP (only features stated on flightforsales.com) -->
+<section style="padding-top:34px;padding-bottom:16px">
+  <div class="wrap">
+    <div class="tstrip">
+      <div class="t"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-plane"/></svg></div><div class="lbl">150+ Airlines</div><div class="sub">Compared for you</div></div>
+      <div class="t"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-price"/></svg></div><div class="lbl">Price Match</div><div class="sub">Promise</div></div>
+      <div class="t"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-headset"/></svg></div><div class="lbl">24/7 Support</div><div class="sub">Customer service</div></div>
+      <div class="t"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-refresh"/></svg></div><div class="lbl">Easy</div><div class="sub">Cancellations</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CALL -->
+<section style="padding-top:26px">
+  <div class="wrap">
+    <h2>Why Book by Phone?</h2>
+    <p class="lead">Real experts do the searching for you — no forms, no hassle.</p>
+    <div class="grid g4">
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-headset"/></svg></div><h3>A Real Expert</h3><p>A travel specialist finds your route and books it for you.</p></div>
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-globe"/></svg></div><h3>150+ Airlines</h3><p>We compare flight deals across a wide range of airlines.</p></div>
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-shield"/></svg></div><h3>Price Match Promise</h3><p>Book with confidence, backed by our price match.</p></div>
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-phone"/></svg></div><h3>Book in One Call</h3><p>Complex, multi-city and last-minute trips handled fast.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCY (no fabricated stats) -->
+<div class="urgency"><div class="wrap"><svg class="ip" aria-hidden="true"><use href="#ic-clock"/></svg><b>Airfares can change quickly.</b> &nbsp; Call now to check live availability and secure your seat with a real travel expert.</div></div>
+
+<!-- HOW IT WORKS -->
+<section>
+  <div class="wrap" style="max-width:720px">
+    <h2>How It Works</h2>
+    <p class="lead">Three steps. A few minutes. Done.</p>
+    <div class="step"><div class="no">1</div><div><h3>Call <a href="tel:+18554476849" style="color:var(--blue)">+1 (855) 447-6849</a></h3><p>A real travel expert answers — 24/7 customer support.</p></div></div>
+    <div class="step"><div class="no">2</div><div><h3>Tell us where &amp; when</h3><p>Your destination, dates, and travelers.</p></div></div>
+    <div class="step"><div class="no">3</div><div><h3>We compare &amp; book your flight</h3><p>Confirmed and ticketed — right on the call.</p></div></div>
+    <div style="text-align:center;margin-top:22px"><a class="btn-call" href="tel:+18554476849"><svg class="ib" aria-hidden="true"><use href="#ic-phone"/></svg>Compare Today's Fares</a></div>
+  </div>
+</section>
+
+<!-- SERVICE HIGHLIGHTS + TRUST BADGES (replaces testimonials — no invented reviews) -->
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <h2>Full-Service Travel Assistance</h2>
+    <p class="lead">One call covers your whole trip.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-globe"/></svg></div><h3>Domestic &amp; International</h3><p>Flights across the US and worldwide.</p></div>
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-route"/></svg></div><h3>Multi-City &amp; Complex Trips</h3><p>Complicated itineraries planned for you.</p></div>
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-users"/></svg></div><h3>Group &amp; Family Travel</h3><p>Book several travelers together with ease.</p></div>
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-suitcase"/></svg></div><h3>Last-Minute Flights</h3><p>Need to fly soon? We'll help right away.</p></div>
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-refresh"/></svg></div><h3>Changes &amp; Cancellations</h3><p>Easy cancellations and changes support.</p></div>
+      <div class="card"><div class="ic"><svg class="i" aria-hidden="true"><use href="#ic-headset"/></svg></div><h3>24/7 Customer Support</h3><p>Talk to a real person whenever you need.</p></div>
+    </div>
+    <div class="badges" style="margin-top:28px">
+      <span class="badge"><svg class="ip" aria-hidden="true"><use href="#ic-headset"/></svg>24/7 Customer Support</span>
+      <span class="badge"><svg class="ip" aria-hidden="true"><use href="#ic-price"/></svg>Price Match Promise</span>
+      <span class="badge"><svg class="ip" aria-hidden="true"><use href="#ic-refresh"/></svg>Easy Cancellations</span>
+      <span class="badge"><svg class="ip" aria-hidden="true"><use href="#ic-lock"/></svg>Secure Payments</span>
+    </div>
+    <div class="secure"><svg class="ip" aria-hidden="true"><use href="#ic-lock"/></svg>Payments are processed through secure checkout.</div>
+  </div>
+</section>
+
+<!-- POPULAR DESTINATIONS (call prompts — no invented prices) -->
+<section>
+  <div class="wrap" style="max-width:760px">
+    <h2>Where Do You Want to Fly?</h2>
+    <p class="lead">Call and a travel expert will find live fares for your dates.</p>
+    <a class="route" href="tel:+18554476849"><span class="r"><svg class="ir" aria-hidden="true"><use href="#ic-plane"/></svg>New York</span><span class="p">Call for today's fare →</span></a>
+    <a class="route" href="tel:+18554476849"><span class="r"><svg class="ir" aria-hidden="true"><use href="#ic-plane"/></svg>Los Angeles</span><span class="p">Call for today's fare →</span></a>
+    <a class="route" href="tel:+18554476849"><span class="r"><svg class="ir" aria-hidden="true"><use href="#ic-plane"/></svg>London</span><span class="p">Call for today's fare →</span></a>
+    <a class="route" href="tel:+18554476849"><span class="r"><svg class="ir" aria-hidden="true"><use href="#ic-plane"/></svg>Dubai</span><span class="p">Call for today's fare →</span></a>
+    <a class="route" href="tel:+18554476849"><span class="r"><svg class="ir" aria-hidden="true"><use href="#ic-plane"/></svg>Toronto</span><span class="p">Call for today's fare →</span></a>
+    <a class="route" href="tel:+18554476849"><span class="r"><svg class="ir" aria-hidden="true"><use href="#ic-plane"/></svg>Delhi</span><span class="p">Call for today's fare →</span></a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background:#fff;border-top:1px solid var(--line)">
+  <div class="wrap faq" style="max-width:760px">
+    <h2>Frequently Asked Questions</h2>
+    <div style="margin-top:24px">
+      <details><summary>Is it free to call?</summary><p>Yes — calling is completely free, with zero obligation. Talk to an expert and get a quote before you book anything.</p></details>
+      <details><summary>How do you find me a good deal?</summary><p>Our experts compare flight deals from over 150 airlines, and every booking is backed by our Price Match Promise.</p></details>
+      <details><summary>Can you book international &amp; multi-city trips?</summary><p>Absolutely — that's our specialty. Just call and describe your trip, and we'll handle it.</p></details>
+      <details><summary>What are your support hours?</summary><p>We offer 24/7 customer support. Call any time and a real travel expert will help.</p></details>
+      <details><summary>Is my payment secure?</summary><p>Yes. Payments are processed through secure checkout to protect your details.</p></details>
+      <details><summary>Can I cancel or change my booking?</summary><p>Yes — we offer easy cancellations. See our Cancellation &amp; Refund policy for details.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section><div class="wrap"><div class="final">
+  <h2>Ready to Book Your Flight?</h2>
+  <p style="font-size:18px;color:#eafff2;margin-top:8px">A real travel expert is ready to help right now.</p>
+  <a class="btn-call" href="tel:+18554476849"><svg class="ib" aria-hidden="true"><use href="#ic-phone"/></svg>Speak to a Travel Expert Now</a>
+</div></div></section>
+
+<!-- FOOTER (real company details + real policy links) -->
+<footer>
+  <div class="wrap">
+    <div class="compliance">Independent travel agency. Not affiliated with or endorsed by any airline.</div>
+    <div class="fcols">
+      <div>
+        <h4>FlightForSales</h4>
+        <a class="foot-num" href="tel:+18554476849"><svg class="ip" aria-hidden="true"><use href="#ic-phone"/></svg>+1 (855) 447-6849</a>
+        <p><a href="mailto:info@flightforsales.com">info@flightforsales.com</a></p>
+        <p>Professionally managed online travel agency.</p>
+      </div>
+      <div>
+        <h4>Offices</h4>
+        <p>1603 Capitol Ave, Cheyenne,<br>WY 82001, USA</p>
+        <p>439-A-5, Govind Puri, South Delhi,<br>Delhi 110019, India</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="https://www.flightforsales.com/about-us.php" target="_blank" rel="noopener">About Us</a>
+        <a href="https://www.flightforsales.com/contact-us.php" target="_blank" rel="noopener">Contact Us</a>
+        <a href="https://www.flightforsales.com/terms-conditions.php" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+        <a href="https://www.flightforsales.com/privacy-policy.php" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://www.flightforsales.com/cancellation-policy.php" target="_blank" rel="noopener">Cancellation &amp; Refund</a>
+      </div>
+    </div>
+    <p class="disclaimer">FlightForSales is an independent, professionally managed online travel agency and is not affiliated with, endorsed by, or sponsored by any airline. All airline names and trademarks are the property of their respective owners. Flight availability and fares are provided by third-party suppliers, are subject to change, and are confirmed at the time of booking.</p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL BAR -->
+<div class="callbar"><a href="tel:+18554476849"><svg class="ib" aria-hidden="true"><use href="#ic-phone"/></svg>Book Your Flight by Phone — +1 (855) 447-6849</a></div>
+
+<!--
+  ─────────────────────────────────────────────────────────────────────
+  OPTIONAL — Google Ads CALL-CONVERSION TRACKING (recommended for the
+  click-to-call ad group, so calls placed FROM this page are attributed).
+  Left commented out so the page stays dependency-free and fast by default.
+  To enable: in Google Ads create a "Calls from a website" conversion action,
+  get your Conversion ID (AW-XXXXXXXXX) + call label, then uncomment & fill in.
+  This can also swap the displayed number for a Google forwarding number.
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-XXXXXXXXX');
+    gtag('config', 'AW-XXXXXXXXX/CALL_LABEL', { phone_conversion_number: '+1 (855) 447-6849' });
+  </script>
+  ─────────────────────────────────────────────────────────────────────
+-->
+
+</body>
+</html>
