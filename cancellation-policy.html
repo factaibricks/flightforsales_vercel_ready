@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="favicon.png">
-<title>Cancellation & Refund | Parallel Flights</title>
+<link rel="icon" type="image/png" href="favicon.png">
+
+<title>Cancellation & Refund Policy | Parallel Flights</title>
 
 <style>
 *{
@@ -19,12 +20,15 @@ body{
   color:#222;
 }
 
+/* HEADER */
+
 header{
   background:#0B7A43;
-  padding:18px 0;
+  padding:14px 0;
   box-shadow:0 2px 8px rgba(0,0,0,.15);
   position:sticky;
   top:0;
+  z-index:999;
 }
 
 .container{
@@ -40,14 +44,18 @@ header{
 }
 
 .logo{
-  color:#fff;
-  text-decoration:none;
-  font-size:30px;
-  font-weight:bold;
+  display:flex;
+  align-items:center;
+}
+
+.logo-img{
+  height:60px;
+  width:auto;
 }
 
 .menu{
   display:flex;
+  align-items:center;
   gap:18px;
 }
 
@@ -57,15 +65,21 @@ header{
   font-weight:600;
 }
 
+.menu a:hover{
+  text-decoration:underline;
+}
+
 .desktop-links{
   display:flex;
   gap:18px;
 }
 
+/* CONTENT */
+
 .hero{
   background:#fff;
-  max-width:880px;
-  margin:50px auto;
+  max-width:900px;
+  margin:45px auto;
   padding:55px;
   border-radius:18px;
   box-shadow:0 8px 25px rgba(0,0,0,.08);
@@ -80,24 +94,18 @@ h1{
 
 h2{
   color:#0B7A43;
-  text-align:center;
-  margin:30px 0 15px;
+  margin:32px 0 14px;
   font-size:26px;
 }
 
 .hero p{
   line-height:1.8;
   font-size:17px;
-  text-align:center;
-  max-width:700px;
-  margin:0 auto 18px;
+  margin-bottom:18px;
 }
 
 .hero ul{
-  display:table;
-  margin:15px auto;
   padding-left:22px;
-  text-align:left;
   line-height:2;
   font-size:17px;
 }
@@ -106,10 +114,43 @@ h2{
   margin-bottom:8px;
 }
 
+.call-box{
+  background:#0B7A43;
+  color:#fff;
+  border-radius:14px;
+  padding:28px;
+  text-align:center;
+  margin-top:35px;
+}
+
+.call-box h2{
+  color:#fff;
+  margin:0 0 12px;
+}
+
+.call-btn{
+  display:inline-block;
+  margin-top:18px;
+  background:#fff;
+  color:#0B7A43;
+  text-decoration:none;
+  font-weight:bold;
+  padding:14px 28px;
+  border-radius:8px;
+}
+
+/* FOOTER */
+
 footer{
   background:#111827;
   color:#fff;
   padding:35px 0;
+}
+
+.footer-logo{
+  height:60px;
+  display:block;
+  margin:0 auto 15px;
 }
 
 .footer-links{
@@ -117,7 +158,7 @@ footer{
   justify-content:center;
   flex-wrap:wrap;
   gap:16px;
-  margin:20px 0;
+  margin:18px 0;
 }
 
 .footer-links a{
@@ -129,40 +170,37 @@ footer{
   text-align:center;
   font-size:14px;
   opacity:.8;
+  margin-top:12px;
 }
+
+/* MOBILE */
 
 @media(max-width:768px){
 
 .desktop-links{
-display:none;
+  display:none;
 }
 
-.logo{
-font-size:24px;
+.logo-img{
+  height:52px;
 }
 
 .hero{
-margin:25px 12px;
-padding:35px 24px;
+  margin:20px 12px;
+  padding:32px 22px;
 }
 
 h1{
-font-size:32px;
+  font-size:30px;
 }
 
 h2{
-font-size:22px;
+  font-size:22px;
 }
 
-.hero p{
-text-align:left;
-font-size:16px;
-}
-
+.hero p,
 .hero ul{
-display:block;
-padding-left:20px;
-font-size:16px;
+  font-size:16px;
 }
 
 }
@@ -175,10 +213,11 @@ font-size:16px;
 <div class="container nav">
 
 <a href="index.html" class="logo">
-Parallel Flights
+  <img src="logo.png" alt="Parallel Flights" class="logo-img">
 </a>
 
 <div class="menu">
+
 <a href="index.html">Home</a>
 
 <div class="desktop-links">
@@ -200,33 +239,47 @@ Parallel Flights
 <h1>Cancellation & Refund Policy</h1>
 
 <p>
-At Parallel Flights, cancellations and refunds are processed according to the fare rules and policies of the airline associated with your booking.
+At <strong>Parallel Flights</strong>, cancellation and refund requests are handled according to the fare rules and conditions of the airline associated with your booking.
 </p>
 
-<h2>Cancellation</h2>
+<h2>Cancellation Policy</h2>
 
 <p>
-If you need to cancel or modify your reservation, please contact our customer support team as early as possible. Cancellation eligibility depends on the airline and ticket type purchased.
+If you need to cancel or modify your reservation, please contact our customer support team as early as possible. Eligibility for cancellation depends on the airline, fare type, and ticket conditions.
 </p>
 
-<h2>Refund Eligibility</h2>
+<h2>Refund Policy</h2>
 
 <ul>
-<li>Refunds are subject to the airline's fare rules.</li>
-<li>Processing times vary depending on the airline and payment method.</li>
-<li>Applicable airline cancellation charges and service fees may apply.</li>
-<li>Some promotional or non-refundable tickets may not qualify for a refund.</li>
+<li>Refund eligibility is determined by the airline's fare rules.</li>
+<li>Processing time varies depending on the airline and payment method.</li>
+<li>Airline cancellation charges and applicable service fees may apply.</li>
+<li>Promotional or non-refundable tickets may not qualify for refunds.</li>
 </ul>
 
-<h2>Customer Support</h2>
+<h2>Changes to Bookings</h2>
 
 <p>
-For cancellation or refund assistance, contact our travel specialists 24/7.
+Flight date changes, name corrections, or itinerary modifications are subject to airline policies and seat availability. Additional fare differences may apply.
 </p>
 
-<p style="text-align:center;font-size:22px;font-weight:bold;color:#0B7A43;">
-+1 (855) 644-4008
+<h2>Need Assistance?</h2>
+
+<p>
+Our travel specialists are available 24/7 to assist you with cancellations, refunds, and booking changes.
 </p>
+
+<div class="call-box">
+
+<h2>Call Our Support Team</h2>
+
+<p>We're available 24 hours a day to help with your booking.</p>
+
+<a href="tel:+18556444008" class="call-btn">
+📞 +1 (855) 644-4008
+</a>
+
+</div>
 
 </section>
 
@@ -236,11 +289,9 @@ For cancellation or refund assistance, contact our travel specialists 24/7.
 
 <div class="container">
 
-<h2 style="color:#fff;text-align:center;">
-Parallel Flights
-</h2>
+<img src="logo.png" alt="Parallel Flights" class="footer-logo">
 
-<p style="text-align:center;margin-top:10px;">
+<p style="text-align:center;">
 Customer Support: +1 (855) 644-4008
 </p>
 
@@ -252,6 +303,10 @@ Customer Support: +1 (855) 644-4008
 <a href="terms-conditions.html">Terms & Conditions</a>
 <a href="cancellation-policy.html">Cancellation Policy</a>
 </div>
+
+<p style="text-align:center;max-width:760px;margin:0 auto;opacity:.8;line-height:1.6;">
+Parallel Flights is an independent online travel agency and is not affiliated with or endorsed by any airline. Airline names and trademarks belong to their respective owners.
+</p>
 
 <div class="copy">
 © 2026 Parallel Flights. All Rights Reserved.
