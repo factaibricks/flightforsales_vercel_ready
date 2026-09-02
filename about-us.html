@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
+
 <title>About Us | Parallel Flights</title>
+
+<meta name="description" content="Learn about Parallel Flights, an independent online travel agency offering personalized flight booking assistance, competitive airfare, and 24/7 customer support.">
 
 <style>
 *{
@@ -15,23 +18,23 @@
 }
 
 body{
-  background:#F4F7F6;
-  color:#222;
+  background:#F5F8FF;
+  color:#12203A;
+  line-height:1.7;
 }
 
 /* HEADER */
 
 header{
-  background:#0B7A43;
-  padding:18px 0;
-  box-shadow:0 2px 8px rgba(0,0,0,.15);
+  background:#fff;
+  border-bottom:1px solid #E3E9F5;
   position:sticky;
   top:0;
   z-index:999;
 }
 
 .container{
-  max-width:1200px;
+  max-width:1180px;
   margin:auto;
   padding:0 20px;
 }
@@ -40,175 +43,209 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
+  height:90px;
 }
 
 .logo{
-  color:#fff;
-  text-decoration:none;
-  font-size:30px;
-  font-weight:bold;
+  display:flex;
+  align-items:center;
+}
+
+.logo img{
+  height:72px;
+  width:auto;
+  display:block;
 }
 
 .menu{
   display:flex;
-  align-items:center;
-  gap:18px;
+  gap:22px;
 }
 
 .menu a{
-  color:#fff;
+  color:#12203A;
   text-decoration:none;
   font-weight:600;
 }
 
 .menu a:hover{
-  text-decoration:underline;
+  color:#0B4FD6;
 }
 
-.desktop-links{
-  display:flex;
-  gap:18px;
+/* HERO */
+
+.hero{
+  margin:35px auto;
+  border-radius:18px;
+  overflow:hidden;
+  background:linear-gradient(135deg,#0A3BA1,#0B4FD6);
+  color:#fff;
+  padding:60px 45px;
+  text-align:center;
+  box-shadow:0 12px 28px rgba(10,59,161,.18);
+}
+
+.hero h1{
+  font-size:44px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:760px;
+  margin:auto;
+  font-size:18px;
+  color:#E8F0FF;
 }
 
 /* CONTENT */
 
-.hero{
+.section{
   background:#fff;
-  max-width:880px;
-  margin:50px auto;
-  padding:55px;
   border-radius:18px;
-  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  padding:45px;
+  margin-bottom:30px;
+  box-shadow:0 8px 25px rgba(0,0,0,.06);
 }
 
-h1{
-  color:#0B7A43;
+.section h2{
+  color:#0A3BA1;
+  font-size:30px;
+  margin-bottom:18px;
   text-align:center;
-  font-size:42px;
-  margin-bottom:22px;
 }
 
-h2{
-  color:#0B7A43;
-  text-align:center;
-  font-size:28px;
-  margin:35px 0 18px;
-}
-
-.hero p{
-  max-width:720px;
-  margin:0 auto 18px;
-  text-align:center;
-  line-height:1.9;
+.section p{
+  margin-bottom:18px;
   font-size:17px;
+  color:#44536A;
 }
 
-.hero ul{
-  display:table;
-  margin:0 auto;
-  padding-left:22px;
-  text-align:left;
-  line-height:2;
-  font-size:17px;
+.features{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:25px;
 }
 
-.hero li{
+.feature{
+  background:#F8FBFF;
+  border:1px solid #E3E9F5;
+  border-radius:14px;
+  padding:18px;
+}
+
+.feature h3{
+  color:#0B4FD6;
   margin-bottom:8px;
+  font-size:18px;
+}
+
+.feature p{
+  margin:0;
+  font-size:15px;
 }
 
 /* CTA */
 
 .cta{
-  margin-top:40px;
-  background:#0B7A43;
-  border-radius:14px;
+  margin-top:30px;
+  background:linear-gradient(135deg,#12A150,#0E8442);
+  color:#fff;
+  border-radius:16px;
   padding:35px;
   text-align:center;
-  color:#fff;
 }
 
 .cta h2{
   color:#fff;
-  margin:0 0 12px;
+  margin-bottom:10px;
 }
 
 .cta p{
-  color:#fff;
+  color:#EFFFF3;
 }
 
 .btn{
   display:inline-block;
   margin-top:18px;
   background:#fff;
-  color:#0B7A43;
+  color:#0E8442;
   text-decoration:none;
+  padding:15px 28px;
+  border-radius:10px;
   font-weight:bold;
-  padding:14px 30px;
-  border-radius:8px;
+  font-size:18px;
 }
 
 /* FOOTER */
 
 footer{
-  background:#111827;
+  background:#081A33;
   color:#fff;
   padding:35px 0;
+  margin-top:35px;
 }
 
-.footer-links{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:16px;
-  margin:20px 0;
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:25px;
 }
 
 .footer-links a{
-  color:#fff;
+  display:block;
+  color:#C7D5EE;
   text-decoration:none;
-  font-size:15px;
+  margin-bottom:8px;
 }
 
 .copy{
+  border-top:1px solid rgba(255,255,255,.15);
+  margin-top:20px;
+  padding-top:15px;
   text-align:center;
-  opacity:.8;
+  color:#AFC3E8;
   font-size:14px;
 }
 
 /* MOBILE */
 
-@media (max-width:768px){
+@media(max-width:768px){
 
-.desktop-links{
-display:none;
+.nav{
+  height:78px;
 }
 
-.logo{
-font-size:24px;
+.logo img{
+  height:58px;
+}
+
+.menu{
+  display:none;
 }
 
 .hero{
-margin:25px 12px;
-padding:35px 24px;
+  padding:40px 25px;
 }
 
-h1{
-font-size:32px;
-}
-
-h2{
-font-size:24px;
+.hero h1{
+  font-size:34px;
 }
 
 .hero p{
-text-align:left;
-font-size:16px;
+  font-size:16px;
 }
 
-.hero ul{
-display:block;
-padding-left:20px;
-font-size:16px;
+.section{
+  padding:28px;
+}
+
+.features{
+  grid-template-columns:1fr;
+}
+
+.footer-grid{
+  grid-template-columns:1fr;
 }
 
 }
@@ -219,18 +256,14 @@ font-size:16px;
 <body>
 
 <header>
-
 <div class="container nav">
 
 <a href="index.html" class="logo">
-Parallel Flights
+<img src="logo.png" alt="Parallel Flights">
 </a>
 
 <div class="menu">
-
 <a href="index.html">Home</a>
-
-<div class="desktop-links">
 <a href="about-us.html">About</a>
 <a href="contact-us.html">Contact</a>
 <a href="privacy-policy.html">Privacy</a>
@@ -239,39 +272,67 @@ Parallel Flights
 </div>
 
 </div>
-
-</div>
-
 </header>
 
 <div class="container">
 
-<section class="hero">
-
+<div class="hero">
 <h1>About Parallel Flights</h1>
+<p>
+Parallel Flights is an independent online travel agency committed to helping travelers book affordable domestic and international flights with personalized support from real travel experts.
+</p>
+</div>
+
+<div class="section">
+
+<h2>Who We Are</h2>
 
 <p>
-Parallel Flights is dedicated to helping travelers find affordable domestic and international airfare. Our experienced travel specialists provide personalized booking assistance, competitive fares, and reliable customer support for every journey.
+Parallel Flights specializes in providing professional flight booking assistance for leisure, business, family, and last-minute travel. Our experienced travel specialists compare airline options and help customers find suitable itineraries based on their travel needs.
 </p>
 
 <p>
-Whether you're planning a family vacation, business trip, honeymoon, or a last-minute getaway, our team works to find the best airline options while making your booking experience simple, secure, and stress-free.
+We believe booking a flight should be simple, transparent, and stress-free. That's why our team is available to provide personalized support before, during, and after your booking.
 </p>
 
-<h2>Why Choose Parallel Flights?</h2>
+</div>
 
-<ul>
-<li>Affordable domestic & international flight deals</li>
-<li>Professional travel booking assistance</li>
-<li>Friendly customer support team</li>
-<li>Secure and hassle-free reservations</li>
-<li>Transparent pricing with no hidden surprises</li>
-</ul>
+<div class="section">
+
+<h2>Why Travelers Choose Us</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>150+ Airline Options</h3>
+<p>Compare domestic and international flight choices across multiple airlines.</p>
+</div>
+
+<div class="feature">
+<h3>24/7 Customer Support</h3>
+<p>Speak directly with a real travel specialist whenever you need assistance.</p>
+</div>
+
+<div class="feature">
+<h3>Multi-City & Last-Minute Trips</h3>
+<p>We help plan complex itineraries and urgent travel reservations.</p>
+</div>
+
+<div class="feature">
+<h3>Secure Booking Experience</h3>
+<p>Professional reservation support with transparent pricing and reliable service.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
 
 <h2>Our Mission</h2>
 
 <p>
-Our mission is to make air travel more accessible by connecting travelers with outstanding airfare opportunities while delivering exceptional customer service, dependable booking support, and a smooth travel experience from start to finish.
+Our mission is to make air travel more accessible by connecting travelers with competitive airfare while delivering dependable customer service and personalized booking assistance.
 </p>
 
 <div class="cta">
@@ -279,16 +340,16 @@ Our mission is to make air travel more accessible by connecting travelers with o
 <h2>Need Help Booking Your Flight?</h2>
 
 <p>
-Speak directly with our travel support specialists 24/7.
+Our travel experts are available 24 hours a day to help you compare flight options and complete your reservation.
 </p>
 
 <a href="tel:+18556444008" class="btn">
-Call +1 (855) 644-4008
+📞 Call +1 (855) 644-4008
 </a>
 
 </div>
 
-</section>
+</div>
 
 </div>
 
@@ -296,21 +357,27 @@ Call +1 (855) 644-4008
 
 <div class="container">
 
-<h2 style="color:#fff;text-align:center;">
-Parallel Flights
-</h2>
+<div class="footer-grid">
 
-<p style="text-align:center;margin-top:10px;">
-Customer Support: +1 (855) 644-4008
+<div>
+<h3>Parallel Flights</h3>
+<p style="margin:12px 0;">Customer Support</p>
+<h2 style="color:#fff;font-size:28px;">+1 (855) 644-4008</h2>
+<p style="margin-top:12px;color:#C7D5EE;">
+Independent online travel agency providing personalized flight booking assistance.
 </p>
+</div>
 
 <div class="footer-links">
+<h4>Quick Links</h4>
 <a href="index.html">Home</a>
 <a href="about-us.html">About Us</a>
 <a href="contact-us.html">Contact Us</a>
 <a href="privacy-policy.html">Privacy Policy</a>
-<a href="terms-conditions.html">Terms</a>
-<a href="cancellation-policy.html">Cancellation</a>
+<a href="terms-conditions.html">Terms & Conditions</a>
+<a href="cancellation-policy.html">Cancellation Policy</a>
+</div>
+
 </div>
 
 <div class="copy">
