@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
+
 <title>Contact Us | Parallel Flights</title>
 
 <style>
@@ -11,36 +12,95 @@
 body{background:#F5F8FF;color:#12203A;line-height:1.6}
 a{text-decoration:none}
 
-/* Header */
-header{background:#0B7A43;padding:16px 0;position:sticky;top:0;z-index:99}
 .container{max-width:1180px;margin:auto;padding:0 20px}
-.nav{display:flex;justify-content:space-between;align-items:center}
-.logo{color:#fff;font-size:28px;font-weight:700}
-.menu{display:flex;gap:22px}
-.menu a{color:#fff;font-weight:600;font-size:15px}
-@media(max-width:768px){
-.menu a:not(:first-child){display:none}
-.logo{font-size:24px}
+
+/* HEADER */
+header{
+background:#0B7A43;
+padding:14px 0;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
 
-/* Hero */
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+display:flex;
+align-items:center;
+}
+
+.logo-img{
+height:60px;
+width:auto;
+}
+
+.menu{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.menu a{
+color:#fff;
+font-weight:600;
+font-size:15px;
+}
+
+.menu a:hover{
+text-decoration:underline;
+}
+
+/* HERO */
 .hero{
 margin:30px auto;
 border-radius:18px;
 overflow:hidden;
-background:linear-gradient(90deg,#0A3BA1 0%,#0B4FD6 45%,#0B4FD6 100%);
+background:linear-gradient(90deg,#0A3BA1,#0B4FD6);
 display:grid;
 grid-template-columns:1.1fr 1fr;
 align-items:center;
-box-shadow:0 12px 30px rgba(10,59,161,.18)
+box-shadow:0 12px 30px rgba(10,59,161,.18);
 }
-.hero-content{padding:45px;color:#fff}
-.tag{color:#8EEA9D;font-size:14px;font-weight:bold;letter-spacing:1px;margin-bottom:12px;display:block}
-.hero h1{font-size:46px;line-height:1.1;margin-bottom:16px}
-.hero p{font-size:18px;color:#E8F0FF}
-.hero-img img{width:100%;height:100%;object-fit:cover;display:block}
 
-/* Section */
+.hero-content{
+padding:45px;
+color:#fff;
+}
+
+.tag{
+color:#8EEA9D;
+font-size:14px;
+font-weight:bold;
+letter-spacing:1px;
+margin-bottom:12px;
+display:block;
+}
+
+.hero h1{
+font-size:44px;
+margin-bottom:16px;
+line-height:1.1;
+}
+
+.hero p{
+font-size:18px;
+color:#E8F0FF;
+}
+
+.hero-img img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+/* SECTION */
 .section{
 background:#fff;
 border-radius:18px;
@@ -48,104 +108,185 @@ padding:45px;
 box-shadow:0 8px 25px rgba(0,0,0,.06);
 margin-bottom:35px;
 }
-.section h2{text-align:center;font-size:38px;color:#0A3BA1;margin-bottom:10px}
-.section .sub{text-align:center;color:#5B6B85;max-width:720px;margin:0 auto 35px}
 
-/* Cards */
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.section h2{
+text-align:center;
+font-size:38px;
+color:#0A3BA1;
+margin-bottom:10px;
+}
+
+.sub{
+text-align:center;
+color:#5B6B85;
+max-width:720px;
+margin:0 auto 35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+
 .card{
 background:#fff;
 border:1px solid #E3E9F5;
 border-radius:16px;
 padding:22px;
 text-align:center;
-transition:.2s;
 }
-.card:hover{transform:translateY(-4px);box-shadow:0 8px 18px rgba(0,0,0,.08)}
+
 .icon{
-width:64px;height:64px;border-radius:50%;
-margin:auto;display:flex;align-items:center;justify-content:center;
-font-size:28px;margin-bottom:14px;
+width:64px;
+height:64px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+margin:0 auto 14px;
 }
+
 .green{background:#E8F8EE;color:#0B7A43}
 .blue{background:#EAF1FF;color:#0B4FD6}
-.card h3{font-size:18px;margin-bottom:8px;color:#12203A}
-.card p{font-size:14px;color:#5B6B85}
-.card strong{display:block;margin:8px 0;font-size:16px;color:#12203A}
+
+.card h3{
+margin-bottom:8px;
+font-size:18px;
+}
+
+.card strong{
+display:block;
+margin:8px 0;
+}
+
+.card p{
+font-size:14px;
+color:#5B6B85;
+}
 
 /* CTA */
 .cta{
 margin-top:35px;
 background:linear-gradient(90deg,#0A3BA1,#0B4FD6);
 border-radius:18px;
-padding:28px;
+padding:30px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-color:#fff;
 flex-wrap:wrap;
 gap:20px;
+color:#fff;
 }
-.cta h3{font-size:30px;margin-bottom:6px}
-.cta p{color:#D9E7FF;max-width:500px}
+
+.cta h3{
+font-size:30px;
+margin-bottom:8px;
+}
+
+.cta p{
+color:#D9E7FF;
+max-width:520px;
+}
+
 .btn{
+display:inline-block;
 background:#12A150;
 color:#fff;
 padding:16px 28px;
 border-radius:10px;
 font-weight:bold;
 font-size:18px;
-display:inline-block;
 }
-.btn:hover{background:#0E8442}
 
-/* Why */
+/* WHY */
 .why{
 margin-top:35px;
+background:#F8FCFF;
 border:1px solid #DCE8F8;
 border-radius:16px;
 padding:25px;
-background:#F8FCFF;
 }
-.why h3{text-align:center;color:#0A3BA1;margin-bottom:20px;font-size:28px}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
-.why-item{padding:10px}
-.why-item span{font-size:34px;display:block;margin-bottom:10px}
-.why-item b{display:block;margin-bottom:6px}
-.why-item p{font-size:14px;color:#5B6B85}
 
-/* Footer */
-footer{background:#081A33;color:#fff;padding:35px 0}
-.foot{display:grid;grid-template-columns:1.2fr 1fr;gap:25px}
-.foot h4{margin-bottom:12px}
-.links a{display:block;color:#C7D5EE;margin-bottom:8px;font-size:14px}
+.why h3{
+text-align:center;
+color:#0A3BA1;
+margin-bottom:20px;
+font-size:28px;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+text-align:center;
+}
+
+.why-item span{
+font-size:34px;
+display:block;
+margin-bottom:10px;
+}
+
+.why-item p{
+font-size:14px;
+color:#5B6B85;
+}
+
+/* FOOTER */
+footer{
+background:#081A33;
+color:#fff;
+padding:35px 0;
+}
+
+.footer-logo{
+height:60px;
+display:block;
+margin:0 auto 15px;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:16px;
+margin:18px 0;
+}
+
+.footer-links a{
+color:#C7D5EE;
+font-size:14px;
+}
+
 .copy{
 border-top:1px solid rgba(255,255,255,.12);
-margin-top:20px;
+margin-top:18px;
 padding-top:15px;
 text-align:center;
 color:#AFC3E8;
 font-size:14px;
 }
 
-/* Mobile */
+/* MOBILE */
 @media(max-width:900px){
 .hero{grid-template-columns:1fr}
-.hero-content{order:2;padding:28px}
-.hero h1{font-size:36px}
-.hero-img{order:1}
+.hero-content{padding:28px}
 .hero-img img{height:240px}
 .grid{grid-template-columns:repeat(2,1fr)}
 .why-grid{grid-template-columns:repeat(2,1fr)}
-.foot{grid-template-columns:1fr}
 }
+
 @media(max-width:520px){
-.grid{grid-template-columns:1fr}
-.why-grid{grid-template-columns:1fr}
-.cta{text-align:center;justify-content:center}
-.section{padding:28px 18px}
+.logo-img{height:52px}
+.menu a:not(:first-child){display:none}
 .hero h1{font-size:32px}
 .section h2{font-size:30px}
+.grid{grid-template-columns:1fr}
+.why-grid{grid-template-columns:1fr}
+.section{padding:28px 18px}
+.cta{text-align:center;justify-content:center}
 }
 </style>
 </head>
@@ -154,16 +295,20 @@ font-size:14px;
 
 <header>
 <div class="container nav">
-<div class="logo">Parallel Flights</div>
+
+<a href="index.html" class="logo">
+<img src="logo.png" alt="Parallel Flights" class="logo-img">
+</a>
 
 <div class="menu">
 <a href="index.html">Home</a>
-<a href="about-us.html">About Us</a>
+<a href="about-us.html">About</a>
 <a href="contact-us.html">Contact</a>
 <a href="privacy-policy.html">Privacy</a>
 <a href="terms-conditions.html">Terms</a>
 <a href="cancellation-policy.html">Cancellation</a>
 </div>
+
 </div>
 </header>
 
@@ -178,7 +323,7 @@ font-size:14px;
 </div>
 
 <div class="hero-img">
-<img src="hero_option2.jpg" alt="Parallel Flights Travel Expert">
+<img src="hero_option2.jpg" alt="Travel Expert">
 </div>
 
 </div>
@@ -188,7 +333,7 @@ font-size:14px;
 <h2>We're Just a Call Away!</h2>
 
 <p class="sub">
-Have questions or need help with your booking? Our travel specialists are ready to assist you anytime, anywhere.
+Have questions or need help with your booking? Our travel specialists are ready to assist you anytime.
 </p>
 
 <div class="grid">
@@ -204,21 +349,21 @@ Have questions or need help with your booking? Our travel specialists are ready 
 <div class="icon blue">🕒</div>
 <h3>Business Hours</h3>
 <strong>24 Hours / 7 Days</strong>
-<p>Monday - Sunday</p>
+<p>Monday – Sunday</p>
 </div>
 
 <div class="card">
 <div class="icon green">✉️</div>
 <h3>Email Support</h3>
 <strong>info@parallelflights.com</strong>
-<p>We'll get back to you as soon as possible.</p>
+<p>We'll respond as quickly as possible.</p>
 </div>
 
 <div class="card">
-<div class="icon blue">🌐</div>
+<div class="icon blue">✈️</div>
 <h3>Our Services</h3>
 <strong>150+ Airlines</strong>
-<p>Domestic, International, Multi-City & Last-Minute Flights.</p>
+<p>Domestic, International & Multi-City Flights.</p>
 </div>
 
 </div>
@@ -227,7 +372,7 @@ Have questions or need help with your booking? Our travel specialists are ready 
 
 <div>
 <h3>Ready to Book Your Next Flight?</h3>
-<p>Speak directly with a real travel expert and compare deals from over 150+ airlines.</p>
+<p>Speak directly with a real travel expert and compare deals from over 150 airlines.</p>
 </div>
 
 <a href="tel:+18556444008" class="btn">
@@ -245,7 +390,7 @@ Have questions or need help with your booking? Our travel specialists are ready 
 <div class="why-item">
 <span>🎧</span>
 <b>Real Experts</b>
-<p>Personalized assistance from experienced travel agents.</p>
+<p>Experienced travel specialists available 24/7.</p>
 </div>
 
 <div class="why-item">
@@ -255,7 +400,7 @@ Have questions or need help with your booking? Our travel specialists are ready 
 </div>
 
 <div class="why-item">
-<span>✈️</span>
+<span>🌍</span>
 <b>150+ Airlines</b>
 <p>Compare domestic & international flight options.</p>
 </div>
@@ -263,7 +408,7 @@ Have questions or need help with your booking? Our travel specialists are ready 
 <div class="why-item">
 <span>⚡</span>
 <b>Book in One Call</b>
-<p>Fast reservations with 24/7 customer support.</p>
+<p>Fast reservations with personalized support.</p>
 </div>
 
 </div>
@@ -278,16 +423,13 @@ Have questions or need help with your booking? Our travel specialists are ready 
 
 <div class="container">
 
-<div class="foot">
+<img src="logo.png" alt="Parallel Flights" class="footer-logo">
 
-<div>
-<h4>Parallel Flights</h4>
-<p>Customer Support</p>
-<h3>+1 (855) 644-4008</h3>
-</div>
+<p style="text-align:center;font-size:18px;">
+Customer Support: <strong>+1 (855) 644-4008</strong>
+</p>
 
-<div class="links">
-<h4>Quick Links</h4>
+<div class="footer-links">
 <a href="index.html">Home</a>
 <a href="about-us.html">About Us</a>
 <a href="contact-us.html">Contact Us</a>
@@ -296,7 +438,9 @@ Have questions or need help with your booking? Our travel specialists are ready 
 <a href="cancellation-policy.html">Cancellation Policy</a>
 </div>
 
-</div>
+<p style="text-align:center;max-width:760px;margin:0 auto;color:#C7D5EE;line-height:1.6;">
+Parallel Flights is an independent online travel agency and is not affiliated with or endorsed by any airline. Airline names and trademarks belong to their respective owners.
+</p>
 
 <div class="copy">
 © 2026 Parallel Flights. All Rights Reserved.
