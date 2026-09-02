@@ -3,197 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
+
 <title>Terms & Conditions | Parallel Flights</title>
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-  background:#F4F7F6;
-  color:#222;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#F5F8FF;color:#12203A;line-height:1.6}
+a{text-decoration:none}
+.container{max-width:1180px;margin:auto;padding:0 20px}
 
 /* HEADER */
-
 header{
-  background:#0B7A43;
-  padding:18px 0;
-  box-shadow:0 2px 8px rgba(0,0,0,.15);
-  position:sticky;
-  top:0;
-  z-index:999;
+background:#0B7A43;
+padding:14px 0;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
 }
-
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:0 20px;
-}
-
-.nav{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo{
-  color:#fff;
-  text-decoration:none;
-  font-size:30px;
-  font-weight:bold;
-}
-
-.menu{
-  display:flex;
-  gap:18px;
-}
-
-.menu a{
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
-}
-
-.desktop-links{
-  display:flex;
-  gap:18px;
-}
+.nav{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center}
+.logo-img{height:60px;width:auto}
+.menu{display:flex;gap:20px;align-items:center}
+.menu a{color:#fff;font-weight:600;font-size:15px}
+.menu a:hover{text-decoration:underline}
 
 /* CONTENT */
-
 .hero{
-  background:#fff;
-  max-width:880px;
-  margin:50px auto;
-  padding:55px;
-  border-radius:18px;
-  box-shadow:0 8px 25px rgba(0,0,0,.08);
+background:#fff;
+max-width:900px;
+margin:40px auto;
+padding:50px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
-
 h1{
-  color:#0B7A43;
-  text-align:center;
-  font-size:40px;
-  margin-bottom:20px;
+text-align:center;
+color:#0A3BA1;
+font-size:40px;
+margin-bottom:20px;
 }
-
 h2{
-  color:#0B7A43;
-  text-align:center;
-  font-size:26px;
-  margin:30px 0 15px;
+color:#0B7A43;
+margin:28px 0 12px;
+font-size:24px;
 }
-
 .hero p{
-  line-height:1.8;
-  font-size:17px;
-  text-align:center;
-  max-width:700px;
-  margin:0 auto 18px;
+font-size:17px;
+color:#42526B;
+margin-bottom:16px;
 }
-
 .hero ul{
-  display:table;
-  margin:15px auto;
-  padding-left:22px;
-  text-align:left;
-  line-height:2;
-  font-size:17px;
+padding-left:22px;
+margin-bottom:18px;
+}
+.hero li{
+margin-bottom:8px;
+font-size:17px;
 }
 
-.hero li{
-  margin-bottom:8px;
+/* SUPPORT BOX */
+.support-box{
+margin-top:30px;
+padding:25px;
+background:#F8FCFF;
+border:1px solid #DCE8F8;
+border-radius:14px;
+text-align:center;
+}
+.phone{
+font-size:26px;
+font-weight:bold;
+color:#0B7A43;
+margin-top:10px;
 }
 
 /* FOOTER */
-
 footer{
-  background:#111827;
-  color:#fff;
-  padding:35px 0;
+background:#081A33;
+color:#fff;
+padding:35px 0;
 }
-
+.footer-logo{
+height:60px;
+display:block;
+margin:0 auto 15px;
+}
 .footer-links{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:16px;
-  margin:20px 0;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:16px;
+margin:18px 0;
 }
-
 .footer-links a{
-  color:#fff;
-  text-decoration:none;
+color:#C7D5EE;
+font-size:14px;
 }
-
 .copy{
-  text-align:center;
-  font-size:14px;
-  opacity:.8;
+border-top:1px solid rgba(255,255,255,.12);
+margin-top:18px;
+padding-top:15px;
+text-align:center;
+color:#AFC3E8;
+font-size:14px;
 }
 
 /* MOBILE */
-
 @media(max-width:768px){
-
-  .desktop-links{
-    display:none;
-  }
-
-  .logo{
-    font-size:24px;
-  }
-
-  .hero{
-    margin:25px 12px;
-    padding:35px 24px;
-  }
-
-  h1{
-    font-size:32px;
-  }
-
-  h2{
-    font-size:22px;
-  }
-
-  .hero p{
-    text-align:left;
-    font-size:16px;
-  }
-
-  .hero ul{
-    display:block;
-    padding-left:20px;
-    font-size:16px;
-  }
-
+.logo-img{height:52px}
+.menu a:not(:first-child){display:none}
+.hero{
+margin:20px 12px;
+padding:30px 22px;
+}
+h1{font-size:32px}
+h2{font-size:22px}
+.hero p,.hero li{font-size:16px}
+.phone{font-size:22px}
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <div class="container nav">
 
 <a href="index.html" class="logo">
-Parallel Flights
+<img src="logo.png" alt="Parallel Flights" class="logo-img">
 </a>
 
 <div class="menu">
-
 <a href="index.html">Home</a>
-
-<div class="desktop-links">
 <a href="about-us.html">About</a>
 <a href="contact-us.html">Contact</a>
 <a href="privacy-policy.html">Privacy</a>
@@ -202,9 +145,6 @@ Parallel Flights
 </div>
 
 </div>
-
-</div>
-
 </header>
 
 <div class="container">
@@ -214,39 +154,52 @@ Parallel Flights
 <h1>Terms & Conditions</h1>
 
 <p>
-By using Parallel Flights, you agree to the following Terms & Conditions governing our travel booking assistance and customer support services.
+By using Parallel Flights, you agree to these Terms & Conditions governing our travel booking assistance and customer support services.
 </p>
 
 <h2>Booking Policy</h2>
 
 <p>
-All flight reservations are subject to airline availability, fare rules, schedule changes, and confirmation by the respective airline at the time of booking.
+All flight reservations are subject to airline availability, fare rules, schedule changes, and final confirmation by the respective airline at the time of booking.
 </p>
 
-<h2>Pricing</h2>
+<h2>Pricing & Availability</h2>
 
 <p>
-Displayed fares and quotes are subject to change until your reservation is confirmed. Taxes, airline fees, and applicable service charges may apply.
+Displayed fares and quotes are subject to change until your reservation has been confirmed. Taxes, airline fees, and applicable service charges may apply.
 </p>
 
 <h2>Customer Responsibilities</h2>
 
 <ul>
 <li>Provide accurate passenger and contact information.</li>
-<li>Carry valid passports, visas, and required travel documents.</li>
+<li>Carry valid passports, visas, and any required travel documents.</li>
 <li>Review airline baggage, check-in, and travel policies before departure.</li>
-<li>Verify all booking details immediately after confirmation.</li>
+<li>Verify all booking details immediately after receiving confirmation.</li>
 </ul>
 
-<h2>Customer Support</h2>
+<h2>Changes & Cancellations</h2>
 
 <p>
-For booking assistance, itinerary changes, or general travel support, our specialists are available 24/7.
+Any modification or cancellation is subject to the airline's fare rules and applicable service fees. Please contact our support team as early as possible for assistance.
 </p>
 
-<p style="text-align:center;font-size:22px;font-weight:bold;color:#0B7A43;">
-+1 (855) 644-4008
+<h2>Limitation of Liability</h2>
+
+<p>
+Parallel Flights acts as an independent travel agency facilitating travel bookings. Airlines remain responsible for flight schedules, delays, cancellations, baggage handling, and other operational matters.
 </p>
+
+<div class="support-box">
+<h2 style="margin-top:0;color:#0A3BA1;">24/7 Customer Support</h2>
+<p>Need booking assistance or itinerary changes? Contact our travel specialists anytime.</p>
+
+<div class="phone">
+<a href="tel:+18556444008">+1 (855) 644-4008</a>
+</div>
+
+<p style="margin-top:8px;">info@parallelflights.com</p>
+</div>
 
 </section>
 
@@ -256,12 +209,10 @@ For booking assistance, itinerary changes, or general travel support, our specia
 
 <div class="container">
 
-<h2 style="color:#fff;text-align:center;">
-Parallel Flights
-</h2>
+<img src="logo.png" alt="Parallel Flights" class="footer-logo">
 
-<p style="text-align:center;margin-top:10px;">
-Customer Support: +1 (855) 644-4008
+<p style="text-align:center;font-size:18px;">
+Customer Support: <strong>+1 (855) 644-4008</strong>
 </p>
 
 <div class="footer-links">
@@ -272,6 +223,10 @@ Customer Support: +1 (855) 644-4008
 <a href="terms-conditions.html">Terms & Conditions</a>
 <a href="cancellation-policy.html">Cancellation Policy</a>
 </div>
+
+<p style="text-align:center;max-width:760px;margin:0 auto;color:#C7D5EE;line-height:1.6;">
+Parallel Flights is an independent online travel agency and is not affiliated with or endorsed by any airline. Airline names and trademarks belong to their respective owners.
+</p>
 
 <div class="copy">
 © 2026 Parallel Flights. All Rights Reserved.
